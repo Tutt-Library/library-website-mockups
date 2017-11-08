@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<div class="container">
+    <h1>Tutt Library Homepage Mockups</h1>
+    <ul class="lead">
+        <li><a href="{{ url_for('sample', mockup='album') }}">Album</a></li>
+        <li><a href="{{ url_for('sample', mockup='blog') }}">Blog</a></li>
+        <li><a href="{{ url_for('sample', mockup='carousel') }}">Carousel</a></li>       
+        <li><a href="{{ url_for('sample', mockup='cover') }}">Cover</a></li>
+        <li><a href="{{ url_for('sample', mockup='dashboard') }}">Dashboard</a></li>
+        <li><a href="{{ url_for('sample', mockup='justified-nav') }}">Justified Nav</a></li>
+        <li><a href="{{ url_for('sample', mockup='jumbotron') }}">Jumbotron</a></li>
+        <li><a href="{{ url_for('sample', mockup='narrow-jumbotron') }}">Narrow Jumbotron</a></li>
+
+
+    </ul>
+</div>
+{% endblock %}
